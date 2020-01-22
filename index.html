@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Arkham chance calculator</title>
+</head>
+
+<body>
+  <div class="input">
+    <p class="input-label">number of successes needed: </p>
+    <input type="text" class="input-success"> </input>
+    <p class="input-label">number of dice: </p>
+    <input type="text" class="input-dice"> </input>
+    <div>
+      <input type="radio" name="success" value="3"> Normal </input>
+      <input type="radio" name="success" value="2"> Blessed </input>
+      <input type="radio" name="success" value="6"> Cursed </input>
+    </div>
+  </div>
+  <div>
+    <p id="calculated-chance"></p>
+  </div>
+  <script src="./calculator.js"></script>
+</body>
+
+</html>

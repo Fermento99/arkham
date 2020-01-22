@@ -1,0 +1,14 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    position: relative;
+}
+
+div {
+    size: .25fr, .25fr;
+}
+
+.input {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+}
