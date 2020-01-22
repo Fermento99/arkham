@@ -11,15 +11,22 @@
 
 <body>
   <div class="input">
-    <p class="input-label">number of successes needed: </p>
-    <input type="text" class="input-success"> </input>
-    <p class="input-label">number of dice: </p>
-    <input type="text" class="input-dice"> </input>
-    <div>
+    <p class="label-success">number of successes needed: </p>
+    <span class="input-success">
+      <input type="text" id="success"> </input>
+    </span>
+    <p class="label-dice">number of dice: </p>
+    <span class="input-dice">
+      <input type="text" id="dice"> </input>
+    </span>
+    <div class="success-selection">
       <input type="radio" name="success" value="3"> Normal </input>
       <input type="radio" name="success" value="2"> Blessed </input>
       <input type="radio" name="success" value="6"> Cursed </input>
     </div>
+    <span>
+      <button id="accept"> Accept </button>
+    </span>
   </div>
   <div>
     <p id="calculated-chance"></p>

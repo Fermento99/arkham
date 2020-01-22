@@ -1,14 +1,40 @@
 *, ::after, ::before {
     box-sizing: border-box;
     position: relative;
+    justify-content: center;
+    align-content: center;
 }
 
 div {
-    size: .25fr, .25fr;
+    height: 40em;
+    width: 50%;
+    background-color: aquamarine; 
 }
 
 .input {
     display: grid;
+    grid-template-columns: 28em, 10em;
+    grid-template-rows: 10em, 10em, 15em;
+}
+
+
+.label-success {
+    grid-column: 1;
+    grid-row: 1;
+}
+.input-success {
     grid-column: 2;
+    grid-row: 1;
+}
+.label-dice {
+    grid-column: 1;
+    grid-row: 2;
+}
+.input-dice {
+    grid-column: 2;
+    grid-row: 2;
+}
+.success-selection {
+    grid-column: 1/2;
     grid-row: 3;
 }
