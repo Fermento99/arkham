@@ -11,25 +11,34 @@
 
 <body>
   <div class="input">
-    <p class="label-success">number of successes needed: </p>
-    <span class="input-success">
-      <input type="text" id="success"> </input>
+    <p class="label-life"> Wymagana ilosc sukcesow </p>
+    <span class="input-life">
+      <input type="text" id="life"> </input>
     </span>
-    <p class="label-dice">number of dice: </p>
+
+    <p class="label-dice"> Liczba kosci</p>
     <span class="input-dice">
       <input type="text" id="dice"> </input>
     </span>
+
     <div class="success-selection">
-      <input type="radio" name="success" value="3"> Normal </input>
-      <input type="radio" name="success" value="2"> Blessed </input>
-      <input type="radio" name="success" value="6"> Cursed </input>
+      <p class="label-success"> Rodzaj rzutow </p>
+      <input id="normal" type="radio" name="success" value="3"> Normal </input>
+      <input id="blessed" type="radio" name="success" value="2"> Blessed </input>
+      <input id="cursed" type="radio" name="success" value="6"> Cursed </input>
     </div>
+
     <span>
-      <button id="accept"> Accept </button>
+      <button id="accept"> Akceptuj </button>
     </span>
+
   </div>
   <div>
     <p id="calculated-chance"></p>
+  </div>
+
+  <div class="output">
+    <p id="output-line">Wprowadz dane</p>
   </div>
   <script src="./calculator.js"></script>
 </body>
