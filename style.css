@@ -13,6 +13,7 @@
     border: .35em;
     border-color: var(--border-color);
     color: var(--font);
+    text-align: center;
 }
 
 .textfield {
@@ -59,7 +60,7 @@ input {
 
 .title {
     border-style: double ;
-    margin: 2em 0;
+    margin: 2em 1em;
     padding: 0 2em;
 }
 
@@ -100,4 +101,10 @@ body {
     border-style: ridge;
     border-width: .2em;
     background-color: var(--input-background);
+}
+
+@media (max-width: 390px){
+    #main {
+        width: 95%;
+    }
 }
