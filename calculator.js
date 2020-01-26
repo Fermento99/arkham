@@ -48,5 +48,5 @@ document.getElementById("accept").onclick = (ev) => {
     let l = checkLife()
     let d = checkDice()
     console.log("chance: " + Math.round(s*100) + "%, life: " + l + ", dice: " + d)
-    document.getElementById("output-line").innerHTML = "sznasa na sukces: " + chances(l, d, s)
+    document.getElementById("output-line").innerHTML = "Sznasa na sukces:  <b>" + chances(l, d, s) + "</b>"
 }

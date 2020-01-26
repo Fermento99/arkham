@@ -6,39 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
   <title>Arkham chance calculator</title>
 </head>
 
 <body>
-  <div class="input">
-    <p class="label-life"> Wymagana ilosc sukcesow </p>
-    <span class="input-life">
-      <input type="text" id="life"> </input>
-    </span>
+  <div id="main">
+    <span class="title"><h2>Sprawdz swoje sznse!</h2></span>
+    <div class="input">
+      <div class="input-container">
+        <p class="input-label"> Wymagana ilosc sukcesow: </p>
+        <span class="input-life">
+          <input class="textfield" type="text" id="life"> </input>
+        </span>
+      </div>
+      <div class="input-container">
+        <p class="input-label"> Liczba kosci: </p>
+        <span class="input-dice">
+          <input class="textfield" type="text" id="dice"> </input>
+        </span>
+      </div>
+      <div class="success-selection">
+        <p class="label-success"> Rodzaj rzutow </p>
+        <span><input id="normal" type="radio" name="success" value="3"> Normal </input></span>
+        <span><input id="blessed" type="radio" name="success" value="2"> Blessed </input></span>
+        <span><input id="cursed" type="radio" name="success" value="6"> Cursed </input></span>
+      </div>
 
-    <p class="label-dice"> Liczba kosci</p>
-    <span class="input-dice">
-      <input type="text" id="dice"> </input>
-    </span>
+      <span>
+        <button id="accept"> Akceptuj </button>
+      </span>
 
-    <div class="success-selection">
-      <p class="label-success"> Rodzaj rzutow </p>
-      <input id="normal" type="radio" name="success" value="3"> Normal </input>
-      <input id="blessed" type="radio" name="success" value="2"> Blessed </input>
-      <input id="cursed" type="radio" name="success" value="6"> Cursed </input>
     </div>
 
-    <span>
-      <button id="accept"> Akceptuj </button>
-    </span>
-
-  </div>
-  <div>
-    <p id="calculated-chance"></p>
-  </div>
-
-  <div class="output">
-    <p id="output-line">Wprowadz dane</p>
+    <div class="output">
+      <p id="output-line">Wprowadz dane</p>
+    </div>
   </div>
   <script src="./calculator.js"></script>
 </body>

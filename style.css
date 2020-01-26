@@ -1,0 +1,103 @@
+
+:root{
+    --input-background: #ad5825;
+    --font: #d2dab6;
+    --background: #7a7553;
+    --border-color: #394A35;
+}
+
+*, ::after, ::before {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Vollkorn', serif;
+    border: .35em;
+    border-color: var(--border-color);
+    color: var(--font);
+}
+
+.textfield {
+    width: 2em;
+    height: 1.5em;
+    border-width: .17em;
+    border-style: solid;
+}
+
+div{
+    margin: .5em;
+}
+
+p {
+    margin: .3em;
+}
+
+body, .input, #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    background-color: var(--input-background);
+}
+
+.input-container {
+    width: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: .2em
+}
+
+.input-label {
+    margin-right: .5em;
+}
+
+.label-success {
+    margin-bottom: 1em;
+}
+
+.title {
+    border-style: double ;
+    margin: 2em 0;
+    padding: 0 2em;
+}
+
+.output {
+    margin: 3em;
+    font-size: larger;
+}
+
+.success-selection {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-style: double;
+}
+
+button {
+    margin: 1.5em;
+    border-style: double;
+    padding: .2em .5em;
+}
+
+#main {
+    margin-top: 3em;;
+    border-style: double;
+    background-color: var(--background);
+}
+
+body {
+    background: url("arkham background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#accept {
+    margin-bottom: 0;
+    border-style: ridge;
+    border-width: .2em;
+    background-color: var(--input-background);
+}
